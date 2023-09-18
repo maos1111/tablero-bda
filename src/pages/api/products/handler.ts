@@ -1,10 +1,9 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { Data } from '.';
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
-): IProduct {
+  res: NextApiResponse
+) {
   const { method } = req.query;
   switch (method) {
     case 'GET':
