@@ -6,8 +6,8 @@ import prismaExample from '@/data/test'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default async function Home() {
-  await prismaExample()
+export default function Home() {
+  // await prismaExample()
   return (
     <>
       <Head>
